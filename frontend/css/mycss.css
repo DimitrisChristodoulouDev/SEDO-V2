@@ -1,0 +1,9 @@
+.btn-floating {
+    cursor: default;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+
+
+.wysiwyg_editor {overflow:scroll; max-height:300px}
