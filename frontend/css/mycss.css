@@ -5,5 +5,8 @@
     right: 50px;
 }
 
-
-.wysiwyg_editor {overflow:scroll; max-height:300px}
+.wysiwyg_editor {
+    overflow: scroll;
+    max-height: 300px
+}
+.label {white-space:nowrap;}
