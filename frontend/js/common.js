@@ -6,8 +6,9 @@ $(function () {
 function loadPartials() {
     var url = 'html/templates/'
     var templates = [
-            {url:'header', selector: '#headerContainer'},
-            {url: 'footer', selector:'#footerContainer'}
+            {url: 'header', selector: '#headerContainer'},
+            {url: 'footer', selector:'#footerContainer'},
+            {url: 'navigation', selector:'#navigationContainer'},
         ];
 
     $.each(templates, function (index, item) {

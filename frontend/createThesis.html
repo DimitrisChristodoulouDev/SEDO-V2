@@ -56,103 +56,10 @@
     <!-- ============================================================== -->
     <!-- Left Sidebar - style you can find in sidebar.scss  -->
     <!-- ============================================================== -->
-    <div class="navbar-default sidebar" role="navigation">
-        <div class="sidebar-nav">
-            <div class="sidebar-head">
-                <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span>
-                    <span class="hide-menu">Navigation</span></h3></div>
-            <ul class="nav" id="side-menu">
-                <li class="user-pro">
-                    <a href="javascript:void(0)" class="waves-effect"><img src="images/users/varun.jpg" alt="user-img"
-                                                                           class="img-circle"> <span class="hide-menu"> Steve Gection<span
-                            class="fa arrow"></span></span>
-                    </a>
-                    <ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
-                        <li><a href="javascript:void(0)"><i class="ti-user"></i> <span
-                                class="hide-menu">My Profile</span></a></li>
-                        <li><a href="javascript:void(0)"><i class="ti-wallet"></i> <span
-                                class="hide-menu">My Balance</span></a></li>
-                        <li><a href="javascript:void(0)"><i class="ti-email"></i> <span
-                                class="hide-menu">Inbox</span></a></li>
-                        <li><a href="javascript:void(0)"><i class="ti-settings"></i> <span class="hide-menu">Account Setting</span></a>
-                        </li>
-                        <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> <span
-                                class="hide-menu">Logout</span></a></li>
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)" class="waves-effect active"><i
-                        class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu"> Μεταπτυχιακο Επιπεδο <span
-                        class="fa arrow"></span> <span
-                        class="label label-rouded label-inverse pull-right">4</span></span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="index-2.html"><i class="mdi mdi-clipboard-text fa-fw"></i><span class="hide-menu">Προπτυχιακο Επιπεδο</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" class="waves-effect "><i class="mdi mdi-clock-end fa-fw"></i>
-                        <span class="hide-menu">Προθεσμίες</span></a>
-                </li>
 
 
-                <li><a href="javascript:void(0)" class="waves-effect "><i class="mdi mdi-plus fa-fw"></i> <span
-                        class="hide-menu">Προσθήκη<span
-                        class="label label-rouded label-warning pull-right">30</span></span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="createThesis.html" class="waves-effect"><i class="mdi mdi-content-paste fa-fw"></i>
-                            <span class="hide-menu">Θεμα</span><span class="fa arrow"></span></a></li>
 
-
-                        <li><a href="javascript:void(0)" class="waves-effect"><i class="mdi mdi-account fa-fw"></i>
-                            <span class="hide-menu">Μελος</span><span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="https://wrappixel.com/ampleadmin/ampleadmin-html/email-templates/basic.html"><span
-                                            class="hide-menu">Φοιτητης</span></a></li>
-                                <li>
-                                    <a href="https://wrappixel.com/ampleadmin/ampleadmin-html/email-templates/alert.html"><span
-                                            class="hide-menu">Καθηγητης</span></a></li>
-                                <li>
-                                    <a href="https://wrappixel.com/ampleadmin/ampleadmin-html/email-templates/billing.html"><span
-                                            class="hide-menu">Συντονιστής</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="javascript:void(0)" class="waves-effect "><i class="mdi mdi-wunderlist fa-fw"></i>
-                        <span class="hide-menu">Θεματα</span></a>
-                </li>
-
-                <li>
-                    <a href="javascript:void(0)" class="waves-effect "><i class="mdi mdi-account-multiple fa-fw"></i>
-                        <span class="hide-menu">Χρηστες</span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="javascript:void(0)" class="waves-effect"><span
-                                class="hide-menu">Φοιτητές</span></a></li>
-                        <li><a href="javascript:void(0)" class="waves-effect"><span
-                                class="hide-menu">Καθηγητες</span></a></li>
-                        <li><a href="javascript:void(0)" class="waves-effect"><span class="hide-menu">Συντονιστής</span></a>
-                        </li>
-                        <li><a href="javascript:void(0)" class="waves-effect"><span class="hide-menu">Γραμματεία</span></a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="javascript:void(0)" class="waves-effect "><i class="mdi mdi-check-all fa-fw"></i>
-                        <span class="hide-menu">Τελειωμενες Πτυχιακες</span></a>
-                </li>
-
-
-                <li>
-                    <a href="javascript:void(0)" class="waves-effect "><i class="mdi mdi-backup-restore fa-fw"></i>
-                        <span class="hide-menu">Εφεδρική Αντιγραφή</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <div id="navigationContainer" class="navbar-default sidebar" role="navigation"></div>
     <!-- ============================================================== -->
     <!-- End Left Sidebar -->
     <!-- ============================================================== -->
@@ -164,6 +71,16 @@
     <!-- ============================================================== -->
     <div id="page-wrapper">
         <div class="container-fluid">
+            <div class="row m-t-30">
+                    <ol class="breadcrumb">
+                        <li><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="active">Compose Mail</li>
+                    </ol>
+
+                <!-- /.col-lg-12 -->
+            </div>
+
+
             <!-- .row -->
             <!-- <form data-toggle="validator" class="floating-labels">
                  <div class="row">
@@ -225,69 +142,39 @@
 
                 <div class="row">
 
-                        <div class="panel panel-info">
-                            <div class="panel-heading"><a href="javascript:void(0)" data-perform="panel-collapse">
-                                Description
-                                <div class="panel-action"></div></a>
-                            </div>
-                            <div class="panel-wrapper collapse " aria-expanded="true">
-                                <div class="panel-body">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <div class="wysiwyg_editor"></div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 well">
-                                        <div id="view" class="danger" style="height: 400px;"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="form-inline">
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="checkbox checkbox-info checkbox-circle">
-                                                <input id="publish" type="checkbox">
-                                                <label for="publish">Publish</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><a href="javascript:void(0)" data-perform="panel-collapse">
+                            Description
+                            <div class="panel-action"></div>
+                        </a>
                         </div>
-
-<!--
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading"><a href="javascript:void(0)" data-perform="panel-collapse">Output
-                              <div class="panel-action"></div></a>
-                            </div>
-                            <div class="panel-wrapper collapse" aria-expanded="true">
-                                <div class="panel-body">
+                        <div class="panel-wrapper collapse " aria-expanded="true">
+                            <div class="panel-body">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="wysiwyg_editor"></div>
                                 </div>
-                                <div class="panel-footer">
-                                    <div class="form-inline">
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="checkbox checkbox-info checkbox-circle">
-                                                <input id="publish" type="checkbox">
-                                                <label for="publish">Publish</label>
-                                            </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 well">
+                                    <div id="view" class="danger" style="height: 400px;"></div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="checkbox checkbox-info checkbox-circle">
+                                            <input id="publish" type="checkbox">
+                                            <label for="publish">Publish</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
--->
+
                 </div>
-
             </form>
-        </div>
-
-
-
         <div class="right-sidebar">
             <div class="slimscrollright">
                 <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span>
@@ -371,18 +258,13 @@
                 </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Right sidebar -->
-        <!-- ============================================================== -->
-
     </div>
     <!-- /.container-fluid -->
-    <div id="footerContainer">
+    <div id="footerContainer"></div>
+</div>
+</div>
 
-    </div>
-</div>
 <!-- /#page-wrapper -->
-</div>
 <!-- /#wrapper -->
 <!-- jQuery -->
 <script src="lib/jquery/dist/jquery.min.js"></script>
@@ -405,7 +287,4 @@
 <script src="js/bootstrap-wysiwyg.js"></script>
 <script src="js/createThesis.js"></script>
 </body>
-
-
-<!-- Mirrored from wrappixel.com/ampleadmin/ampleadmin-html/ampleadmin-horizontal-nav/form-validation.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Aug 2017 15:28:07 GMT -->
 </html>
