@@ -20,6 +20,8 @@
     <!-- animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/bootstrap-wysiwyg.css" rel="stylesheet">
+    <link href="lib/switchery/dist/switchery.min.css" rel="stylesheet" />
+    <link href="lib/toast-master/css/jquery.toast.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mycss.css" rel="stylesheet">
@@ -81,14 +83,21 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-info">
-                        <div class="panel-heading">Ορισμος Προθεσμιών</div>
-                        <div class="panel-wrapper collapse in" aria-expanded="true">
+                        <div class="panel-heading">Ορισμος Προθεσμιών
+                            <!--<span class="label label-success m-l-5">OPEN</span></div>-->
+                            <label for="toggleRestriction" class="pull-right" >
+                                CLOSE
+                            <input type="checkbox" id="toggleRestriction"  class="js-switch" data-color="#99d683" data-secondary-color="#f96262" />
+                            OPEN
+                            </label>
+                        </div>
+                        <div class="panel-wrapper collapse in" aria-expanded="true" id="restrictionsPanel">
                             <div class="panel-body">
                                 <form data-toggle="validator">
                                     <div class="form-body">
 
                                         <div class="row">
-                                        <h3 class="box-title">Πρόσθεση Θεμάτων Απο Καθηγητές. </h3>
+                                        <h3 class="box-title">Πρόσθεση θεματων Απο Καθηγητές. </h3>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <div class="input-daterange input-group date-range">
@@ -103,15 +112,15 @@
                                         </div>
                                     </div>
                                         <div class="row">
-                                            <h3 class="box-title">Επιλογή Θεμάτων Απο Φοιτητές</h3>
+                                            <h3 class="box-title">Επιλογή θεματων Απο Φοιτητές</h3>
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <div class="input-daterange input-group date-range">
 
 
-                                                        <input type="text" class="form-control" id="addSubjStart" required >
+                                                        <input type="text" class="form-control" id="studentSelectSubjStart" required >
                                                         <span class="input-group-addon bg-info b-0 text-white">to</span>
-                                                        <input type="text" class="form-control" id="addSubjEnd" required>
+                                                        <input type="text" class="form-control" id="studentSelectSubjEnd" required>
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -124,9 +133,9 @@
                                                     <div class="input-daterange input-group date-range">
 
 
-                                                        <input type="text" class="form-control" id="addSubjStart" required >
+                                                        <input type="text" class="form-control" id="studentSelectSubjStartFirst" required >
                                                         <span class="input-group-addon bg-info b-0 text-white">to</span>
-                                                        <input type="text" class="form-control" id="addSubjEnd" required>
+                                                        <input type="text" class="form-control" id="studentSelectSubjEndFirst" required>
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -139,9 +148,9 @@
                                                     <div class="input-daterange input-group date-range">
 
 
-                                                        <input type="text" class="form-control" id="addSubjStart" required >
+                                                        <input type="text" class="form-control" id="studentSelectSubjStartSecond" required >
                                                         <span class="input-group-addon bg-info b-0 text-white">to</span>
-                                                        <input type="text" class="form-control" id="addSubjEnd" required>
+                                                        <input type="text" class="form-control" id="studentSelectSubjEndSecond" required>
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -154,9 +163,9 @@
                                                     <div class="input-daterange input-group date-range">
 
 
-                                                        <input type="text" class="form-control" id="addSubjStart" required >
+                                                        <input type="text" class="form-control" id="studentSelectSubjStartThird" required >
                                                         <span class="input-group-addon bg-info b-0 text-white">to</span>
-                                                        <input type="text" class="form-control" id="addSubjEnd" required>
+                                                        <input type="text" class="form-control" id="studentSelectSubjEndThird" required>
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -271,6 +280,12 @@
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<div id="libContainer">
+
+</div>
+
+
     <!-- Menu Plugin JavaScript -->
     <script src="lib/sidebar-nav/dist/sidebar-nav.min.js"></script>
     <!--slimscroll JavaScript -->
@@ -281,13 +296,16 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.min.js"></script>
     <script src="js/validator.js"></script>
-    <script src="js/common.js"></script>
     <!--Style Switcher -->
     <script src="lib/styleswitcher/jQuery.style.switcher.js"></script>
+<script src="lib/switchery/dist/switchery.min.js"></script
     <script src="lib/typeahead.js-master/dist/typeahead.bundle.min.js"></script>
 <script src="lib/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 <script src="lib/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="lib/blockUI/jquery.blockUI.js"></script>
+<script src="lib/toast-master/js/jquery.toast.js"></script>
     <!--<script src="lib/typeahead.js-master/dist/typeahead-init.js"></script>-->
-    <script src="js/restrictions.js"></script>
+<script src="js/common.js"></script>
+<script src="js/restrictions.js"></script>
 </body>
 </html>

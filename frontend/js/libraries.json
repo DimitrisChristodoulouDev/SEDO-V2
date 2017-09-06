@@ -1,0 +1,9 @@
+
+[
+  {"name": "myLibrary", "path": "js/login.js"},
+  {"name": "myLibrary2", "path": "myPath"},
+  {"name": "myLibrary3", "path": "myPath"},
+  {"name": "myLibrary4", "path": "myPath"},
+  {"name": "myLibrary5", "path": "myPath"},
+  {"name": "myLibrary6", "path": "js/waves.js"}
+]
