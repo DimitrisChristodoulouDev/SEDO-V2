@@ -19,4 +19,10 @@ $(function () {
         $form[0].reset();
     })
 
+    $('#loginBtn').on('click', function () {
+        callAjax('asd').done(function () {
+            console.log('asdasasd');
+        })
+    })
+
 })

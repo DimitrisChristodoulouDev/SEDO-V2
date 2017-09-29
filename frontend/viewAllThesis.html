@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from wrappixel.com/ampleadmin/ampleadmin-html/ampleadmin-horizontal-nav/form-validation.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Aug 2017 15:28:07 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <title>Ample Admin Template - The Ultimate Multipurpose admin template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="lib/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap-wysiwyg.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/megna-dark.css" id="theme" rel="stylesheet">
+    <!-- Typehead CSS -->
+    <link href="lib/typeahead.js-master/dist/typehead-min.css" rel="stylesheet">
+    <link href="lib/dropzone-master/dist/dropzone.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="fix-header">
+<!-- ============================================================== -->
+<!-- Preloader -->
+<!-- ============================================================== -->
+<div class="preloader">
+    <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+</div>
+<!-- ============================================================== -->
+<!-- Wrapper -->
+<!-- ============================================================== -->
+<div id="wrapper">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="headerContainer"></div>
+    <!-- End Top Navigation -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+
+
+    <div id="navigationContainer" class="navbar-default sidebar" role="navigation"></div>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page Content -->
+    <!-- ============================================================== -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row m-t-30">
+                <ol class="breadcrumb">
+                    <li><a href="javascript:void(0)">Dashboard</a></li>
+                    <li class="active">Compose Mail</li>
+                </ol>
+            </div>
+
+
+            <div class="row el-element-overlay m-b-40">
+                <!-- /.usercard -->
+                <div class="col-md-12">
+                    <h4>Scroll down effect <br/>
+                        <small>You can use scroll down effect <code>el-overlay scrl-dwn</code></small>
+                    </h4>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row el-element-overlay " id="allThesisWrapper">
+                <script id="allThesisTemplate" type="text/x-handlebars-template">
+                    {{#each thesis}}
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="white-box">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"><img class="img-responsive small" src="images/thesis/{{id}}"/>
+                                    <div class="el-overlay scrl-dwn">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
+                                                   href="javascript:void(0)"><i class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline" href="showThesis.html?id={{id}}"><i
+                                                    class="icon-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                    <h3 class="box-title">{{student.name}} {{student.surname}}</h3>
+                                    <small>{{title}}</small>
+                                    <br/></div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each }}
+                </script>
+            </div>
+
+        </div>
+
+    <!-- /.row -->
+
+
+    <div id="footerContainer"></div>
+</div>
+</div>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/handlebars-v4.0.10.js"></script>
+<!-- Menu Plugin JavaScript -->
+<script src="lib/sidebar-nav/dist/sidebar-nav.min.js"></script>
+<!--slimscroll JavaScript -->
+<script src="js/jquery.slimscroll.js"></script>
+<!--Wave Effects -->
+<script src="js/waves.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.min.js"></script>
+
+<script src="js/common.js"></script>
+<script src="js/showAllThesis.js"></script>
+</body>
+</html>

@@ -27,6 +27,8 @@
     <link href="css/colors/megna-dark.css" id="theme" rel="stylesheet">
     <!-- Typehead CSS -->
     <link href="lib/typeahead.js-master/dist/typehead-min.css" rel="stylesheet">
+    <link href="lib/dropzone-master/dist/dropzone.css" rel="stylesheet" type="text/css" />
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -109,30 +111,34 @@
                 <div class="row m-t-10 clearfix">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="panel panel-info">
-                            <div class="panel-heading">Thesis Title</div>
+                            <div class="panel-heading">Thesis Information</div>
                             <div class="panel-wrapper">
                                 <div class="panel-body">
-                                    <div class="form-group col-sm-6">
+                                    <div class="form-group">
                                         <input type="text" class="form-control" id="thesisTitle" required>
                                         <span class="highlight"></span> <span class="bar"></span>
                                         <label for="thesisTitle" class="control-label">Title</label>
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">Professor</div>
-                            <div class="panel-wrapper">
-                                <div class="panel-body">
+
                                     <div class="form-group" id="the-basics">
                                         <input class="typeahead form-control" id="professor"
                                                placeholder="Select a professor" type="text" required>
                                         <span class="highlight"></span> <span class="bar"></span>
                                         <div class="help-block with-errors"></div>
                                     </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">Upload files</div>
+                            <div class="panel-wrapper">
+                                <div class="panel-body">
+
+                                    <div id="uploadFile" class="dropzone"></div>
 
                                 </div>
                             </div>
@@ -285,6 +291,8 @@
 <script src="lib/typeahead.js-master/dist/typeahead.bundle.min.js"></script>
 <!--<script src="lib/typeahead.js-master/dist/typeahead-init.js"></script>-->
 <script src="js/bootstrap-wysiwyg.js"></script>
+<script src="lib/dropzone-master/dist/dropzone.js"></script>
+
 <script src="js/createThesis.js"></script>
 </body>
 </html>

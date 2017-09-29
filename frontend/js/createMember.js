@@ -49,12 +49,13 @@ function renderForm(){
 
 function formFunctions() {
     $('#createStudent').validator();
-    $("div#uploadFile").dropzone({
+    $("div.dropzone").dropzone({
         url: "/file/post",
         paramName:'studentFile',
         acceptedFiles:'.xls, .xlsx',
         addRemoveLinks: true,
         dictRemoveFileConfirmation: null,
-
     });
+
+    $('.datepicker').datepicker();
 }

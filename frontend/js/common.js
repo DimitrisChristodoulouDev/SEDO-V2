@@ -1,9 +1,55 @@
 $(function () {
-
+    $(document).prop('title', 'SEDO V2');
+    // Ladda.bind( 'input[type=submit]' );
     loadPartials()
-    $('form').validator();
-     // loadLibraries(['myLibrary', 'myLibrary6'])
+
+
+
+
 })
+
+function callAjax(url, data) {
+    base_url = 'http://api/';
+    var $btn = $(':focus');//Ladda.bind('.btn');
+    Ladda.bind($btn);
+
+    return $.ajax({
+        beforeSend: function(){
+            l.start()
+            },
+        async: true,
+        crossDomain: true,
+        method: 'POST',
+        headers: {
+            // AuthToken: getToken(),
+            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+        },
+        cache: false,
+        url: base_url + url,
+        dataType: 'json',
+        data: data,
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            $l.stop();
+
+        },
+        statusCode: {
+            404: function() {
+                // window.location.href = 'errors/404.html'
+            },
+            500: function() {
+                // window.location.href = 'errors/500.html'
+            }
+        },
+        success: function (response) {
+            // Ladda.stop();
+
+        }
+
+    });
+}
+
+
+
 
 function getUrlParameter(sParam) {
     var sPageURL = String(decodeURIComponent(window.location.search.substring(1))).replace(/#/, ""),
@@ -56,15 +102,13 @@ function renderLibraries(res){
 
 }
 
-function blockElements(selector, blockIt){
-    if(blockIt){
+function blockElements(selector, blockIt) {
+    if (blockIt) {
         $(selector).block({
             message: '<h3>Please enable changes</h3>'
             , css: {
                 border: '1px solid #fff'
             }
         })
-    }else {
-        $(selector).unblock();
-    }
+    }else $(selector).unblock();
 }

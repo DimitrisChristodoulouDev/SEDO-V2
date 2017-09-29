@@ -19,9 +19,11 @@ $(function () {
         todayBtn: 'linked',
     });
 
-    $('#toggleRestriction').on('change', function () {
-        if (this.checked === false) blockElements('#restrictionsPanel', true)
-        else blockElements('#restrictionsPanel', false)
+    $('#toggleRestriction').on('click', function () {
+        console.log(this.checked)
+        // if (this.checked === false)
+            blockElements('#restrictionsPanel', this.checked )
+        // else blockElements('#restrictionsPanel', false)
     });
 
 

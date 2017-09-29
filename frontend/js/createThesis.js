@@ -92,3 +92,12 @@ function createTypeahead() {
 function refreshView() {
 
 }
+
+$("div.dropzone").dropzone({
+    url: "/file/post",
+    paramName:'studentFile',
+    acceptedFiles:'.pdf, .doc, .docx',
+    addRemoveLinks: true,
+    dictRemoveFileConfirmation: null,
+
+});
